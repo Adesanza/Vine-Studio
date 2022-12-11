@@ -121,6 +121,9 @@ const LogoText = styled.p`
   font-style: normal;
   font-weight: 700;
   font-size: 28px;
+  @media screen and (max-width: 768px) {
+    font-size: 22px;
+  }
 `;
 
 export {

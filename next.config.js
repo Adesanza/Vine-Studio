@@ -1,11 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+    compiler: {
+        // ssr and displayName are configured by default
+        styledComponents: true,
+    },
     reactStrictMode: true,
-    // swcMinify: true,
-    // Enables the styled-components SWC transform
-    // plugins: [
-    //     ["styled-components", { ssr: true }]
-    // ],
+    // images: {
+    //     domains: ["res.cloudinary.com"],
+    // },
 };
 
 module.exports = nextConfig;
