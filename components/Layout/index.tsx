@@ -1,5 +1,6 @@
 import Head from "next/head";
 import { FC, ReactNode } from "react";
+import AppHeader from "../AppHeader";
 import { LayoutContainer } from "./Layout.styled";
 interface LayoutProp {
   children: ReactNode;
@@ -17,6 +18,7 @@ const Layout: FC<LayoutProp> = ({ children, title }: LayoutProp) => {
         />
         <link rel="shortcut icon" href="/assets/VinePNGLogo.png" />
       </Head>
+      <AppHeader />
 
       {children}
     </LayoutContainer>

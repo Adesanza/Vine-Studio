@@ -16,10 +16,10 @@ function MyApp({ Component, pageProps }: AppProps) {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 2000);
+    }, 3000);
   }, []);
   return (
-    <div>
+    <Fragment>
       {/* <ReduxProvider store={store}> */}
       <ToastContainer />
 
@@ -28,12 +28,15 @@ function MyApp({ Component, pageProps }: AppProps) {
           <Fragment>
             <Head>
               <title>Vine-Studio</title>
-              <meta name="description" content="content for seo for carligy" />
               <meta
+                name="description"
+                content="content for seo for vine studio"
+              />
+              {/* <meta
                 name="viewport"
                 content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
-              ></meta>
-              <meta name="HandheldFriendly" content="true" />
+              ></meta> */}
+              {/* <meta name="HandheldFriendly" content="true" /> */}
               <link rel="icon" href="/favicon.ico" />
             </Head>
             <Component {...pageProps} />
@@ -53,7 +56,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 
       {/* <Component {...pageProps} /> */}
       {/* </ReduxProvider> */}
-    </div>
+    </Fragment>
   );
 }
 

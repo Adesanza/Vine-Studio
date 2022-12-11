@@ -6,7 +6,7 @@ const LoadingScreen = () => {
     <Screen>
       <ScreenContainer>
         <div className="animate-flicker">
-          <LogoText>Vine-Studio Loading...</LogoText>
+          <LogoText>Vine-Studio ...</LogoText>
         </div>
       </ScreenContainer>
     </Screen>
