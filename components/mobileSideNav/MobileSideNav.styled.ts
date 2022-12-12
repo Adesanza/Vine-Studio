@@ -41,23 +41,40 @@ const SideNavLinkContainer = styled.div`
 
 const SideNavLink = styled.a`
   display: block;
-  font-weight: 300;
-  font-size: 1rem;
   margin: 0 1.5625rem 3.125rem;
   color: #363435;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+
+  color: #262c55;
 `;
 
-const SideNavBtn = styled(Button)`
+const SideNavBtnLogin = styled(Button)`
   && {
-    display: block;
-    background: #131313;
-    border-radius: 0.25rem;
-    padding: 1rem 7.5rem;
+    padding: 0.8rem 47px;
+    font-weight: 500;
+    font-size: 0.875rem;
+    text-transform: none;
+    margin: 0;
+    background: rgba(171, 51, 86, 0.04);
+    border: 0.5px solid rgba(171, 51, 86, 0.4);
+    border-radius: 6px;
+    color: #ab3356;
+  }
+`;
+const SideNavBtnApply = styled(Button)`
+  && {
+    display: flex;
+    background: #ab3356 !important;
+    border-radius: 6px;
+    padding: 0.8rem 47px;
     color: #ffffff;
     font-weight: 500;
     font-size: 0.875rem;
     text-transform: none;
-    margin: 0 1.5625rem;
+    margin: 0;
   }
 `;
 
@@ -73,6 +90,13 @@ const MobileAccordion = styled(Accordion)`
     }
   }
 `;
+const SideNavBox = styled.div`
+  && {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+`;
 
 export {
   StyledDrawer,
@@ -80,6 +104,8 @@ export {
   CloseIconContainer,
   SideNavLinkContainer,
   SideNavLink,
-  SideNavBtn,
+  SideNavBtnLogin,
   MobileAccordion,
+  SideNavBox,
+  SideNavBtnApply,
 };

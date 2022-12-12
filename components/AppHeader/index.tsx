@@ -20,7 +20,7 @@ const AppHeader = (props: Props) => {
   return (
     <div>
       <NavBarContainer>
-        <Image width={80} height={60} src={Logo} alt={"logo"} />
+        <Image width={90} height={50} src={Logo} alt={"logo"} />
 
         <HamburgerContainer onClick={() => setShowRightDrawer(true)}>
           <Image width={40} height={30} src={Hamburger} alt={"logo"} />

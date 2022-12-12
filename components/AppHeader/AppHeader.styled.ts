@@ -5,11 +5,15 @@ const NavBarContainer = styled.div`
   justify-content: space-between;
   align-items: center;
   background: #ffffff;
+  position: fixed;
+  width: 100%;
+  height: 74px;
   @media screen and (min-width: 52em) {
     display: none;
   }
   @media screen and (max-width: 52em) {
-    padding: 8px 22px;
+    padding: 0 22px;
+
     /* border: 1px solid red; */
   }
 `;
