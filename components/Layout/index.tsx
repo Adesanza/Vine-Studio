@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { FC, ReactNode } from "react";
 import AppHeader from "../AppHeader";
+import Footer from "../Footer";
 import { LayoutContainer } from "./Layout.styled";
 interface LayoutProp {
   children: ReactNode;
@@ -21,6 +22,7 @@ const Layout: FC<LayoutProp> = ({ children, title }: LayoutProp) => {
       <AppHeader />
 
       {children}
+      <Footer />
     </LayoutContainer>
   );
 };

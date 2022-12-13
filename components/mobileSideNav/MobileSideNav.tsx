@@ -6,8 +6,10 @@ import {
   CloseIconContainer,
   SideNavLinkContainer,
   SideNavLink,
-  SideNavBtn,
   MobileAccordion,
+  SideNavBox,
+  SideNavBtnLogin,
+  SideNavBtnApply,
 } from "./MobileSideNav.styled";
 import Image from "next/image";
 import Logo from "../../public/vine-studio-logo.svg";
@@ -21,8 +23,8 @@ const MobileSideNav = ({ showRightDrawer, closeRightDrawer }: any) => {
             <Image
               onClick={closeRightDrawer}
               src={Logo}
-              width={50}
-              height={40}
+              width={90}
+              height={60}
               alt="a"
             />
           </Link>
@@ -30,16 +32,21 @@ const MobileSideNav = ({ showRightDrawer, closeRightDrawer }: any) => {
         </CloseIconContainer>
         <SideNavLinkContainer>
           <Link href="/about-us" passHref>
-            <SideNavLink>About us</SideNavLink>
+            <SideNavLink>About Vine</SideNavLink>
           </Link>
           <Link href="/contact-us" passHref>
-            <SideNavLink>Contact us</SideNavLink>
+            <SideNavLink>What we do </SideNavLink>
           </Link>
           <Link href="/career" passHref>
-            <SideNavLink>Careers</SideNavLink>
+            <SideNavLink>The Team</SideNavLink>
           </Link>
-          <SideNavBtn>Login</SideNavBtn>
-          <SideNavBtn>Apply</SideNavBtn>
+          <Link href="/career" passHref>
+            <SideNavLink>Our Portfolio</SideNavLink>
+          </Link>
+          <SideNavBox>
+            <SideNavBtnLogin onClick={closeRightDrawer}>Login</SideNavBtnLogin>
+            <SideNavBtnApply onClick={closeRightDrawer}>Apply</SideNavBtnApply>
+          </SideNavBox>
         </SideNavLinkContainer>
       </StyledSideDrawer>
     </StyledDrawer>
