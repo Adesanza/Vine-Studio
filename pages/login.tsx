@@ -1,15 +1,14 @@
 import type { NextPage } from "next";
-// import Footer from '../components/footer';
 
 import Layout from "../components/Layout";
 import LoginPage from "../components/Login";
+import Footer from "../components/Footer";
 
 const Login: NextPage = () => {
   return (
-    <div>
+    <Layout title="Vine-Studio login info here">
       <LoginPage />
-      {/* <Footer /> */}
-    </div>
+    </Layout>
   );
 };
 
